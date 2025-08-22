@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use GRWB, please cite this release."
+title: "Global Retreat Wellness Benchmark (GRWB)"
+version: "1.0"
+date-released: "2025-08-21"
+authors:
+  - name: "GRWB Open-Source Initiative"
+abstract: >
+  GRWB is an open-source benchmark for evaluating safety and responsibility
+  across wellness retreats, clinics, and 1:1 services. Public output includes
+  five badges and a composite score when guardrails pass.
+license: "CC-BY-NC-4.0"
+repository-code: "https://github.com/<org>/<repo>"
+keywords:
+  - wellness
+  - safety
+  - retreats
+  - benchmarking
+  - mental health
