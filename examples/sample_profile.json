@@ -1,0 +1,33 @@
+{
+  "spec_version": "1.0",
+  "spec_hash": "8b8f3c9a2c1a4e6d8d7c1a5e2b3c9f1a2d3e4f56789abcde1234567890abcdef",
+  "review_date": "2025-08-21",
+  "operator": {
+    "name": "Serene Pines Retreat",
+    "jurisdiction": "Netherlands (truffles lawful)"
+  },
+  "badges": {
+    "screening": 2,
+    "facilitators": 3,
+    "medical": 2,
+    "acute_safety": 2,
+    "integration": 1
+  },
+  "dimensions": {
+    "legal_governance": 85,
+    "screening": 78,
+    "facilitators": 92,
+    "medical": 80,
+    "acute_safety": 82,
+    "protocol_dosing": null,
+    "ethics_safeguarding": 84,
+    "integration": 68,
+    "outcomes": 55
+  },
+  "external_assurance": [
+    "On-call RN agreement",
+    "Annual third-party advisory audit 2025"
+  ],
+  "guards_passed": true,
+  "composite": 81
+}
