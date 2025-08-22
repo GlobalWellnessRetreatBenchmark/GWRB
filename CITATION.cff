@@ -10,7 +10,7 @@ abstract: >
   across wellness retreats, clinics, and 1:1 services. Public output includes
   five badges and a composite score when guardrails pass.
 license: "CC-BY-NC-4.0"
-repository-code: "https://github.com/<org>/<repo>"
+repository-code: "https://github.com/GlobalWellnessRetreatBenchmark/GWRB"
 keywords:
   - wellness
   - safety
