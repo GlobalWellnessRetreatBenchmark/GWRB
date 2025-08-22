@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GRWB Profile",
+  "type": "object",
+  "required": [
+    "spec_version",
+    "spec_hash",
+    "review_date",
+    "operator",
+    "badges",
+    "dimensions",
+    "guards_passed",
+    "composite"
+  ],
+  "properties": {
+    "spec_version": { "type": "string", "pattern": "^\\d+(\\.\\d+)?$" },
+    "spec_hash": { "type": "string" },
+    "review_date": { "type": "string", "format": "date" },
+    "operator": {
+      "type": "object",
+      "required": ["name", "jurisdiction"],
+      "properties": {
+        "name": { "type": "string" },
+        "jurisdiction": { "type": "string" }
+      }
+    },
+    "badges": {
+      "type": "object",
+      "properties": {
+        "screening": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "facilitators": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "medical": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "acute_safety": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "integration": { "type": "integer", "minimum": 0, "maximum": 3 }
+      },
+      "additionalProperties": false
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "legal_governance": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "screening": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "facilitators": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "medical": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "acute_safety": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "protocol_dosing": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "ethics_safeguarding": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "integration": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+        "outcomes": { "type": ["integer", "null"], "minimum": 0, "maximum": 100 }
+      },
+      "additionalProperties": false
+    },
+    "composite": { "type": ["integer", "null"] },
+    "guards_passed": { "type": "boolean" },
+    "external_assurance": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
